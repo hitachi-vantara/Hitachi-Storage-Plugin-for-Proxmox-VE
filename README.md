@@ -1,6 +1,6 @@
-# Hitachi Storage Plug-in for Proxmox VE (HSPV) v1.0.0
+# Hitachi Storage Plug-in for Proxmox VE v1.0.0
 
-The **Hitachi Storage Plug-in for Proxmox VE (HSPV)** integrates Proxmox Virtual Environment (VE) with Hitachi Virtual Storage Platform One Block (VSP One Block) storage systems. It enables Proxmox VE administrators to provision and manage Hitachi storage volumes for virtual machines (VMs) and containers (CTs) directly from the Proxmox VE environment.
+The **Hitachi Storage Plug-in for Proxmox VE** integrates Proxmox Virtual Environment (VE) with Hitachi Virtual Storage Platform One Block (VSP One Block) storage systems. It enables Proxmox VE administrators to provision and manage Hitachi storage volumes for virtual machines (VMs) and containers (CTs) directly from the Proxmox VE environment.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ The **Hitachi Storage Plug-in for Proxmox VE (HSPV)** integrates Proxmox Virtual
 
 ## Overview
 
-HSPV integrates existing Hitachi storage pools with Proxmox VE. The plug-in uses the storage system REST API for storage management and Fibre Channel (FC) or iSCSI for host connectivity. It automatically maps and unmaps storage volumes to Proxmox VE hosts as required by workload operations and supports multi-port and multipath configurations.
+The Storage Plug-in for Proxmox VE integrates existing Hitachi storage pools with Proxmox VE. The plug-in uses the storage system REST API for storage management and Fibre Channel (FC) or iSCSI for host connectivity. It automatically maps and unmaps storage volumes to Proxmox VE hosts as required by workload operations and supports multi-port and multipath configurations.
 
 Each Proxmox VE image provisioned through the plug-in corresponds to a volume on the Hitachi storage system.
 
@@ -53,7 +53,7 @@ For the latest supported storage models and microcode versions, refer to the pro
 | Software | Supported version |
 |---|---|
 | Proxmox VE (Debian OS 13.x) | 9.2.x or later |
-| HSPV installer package | 1.0.0.x |
+| Storage Plug-in for Proxmox VE installer package | 1.0.0.x |
 | `multipathd` | 0.11.1-2 or later |
 | `udevadm` | 257 or later |
 | `iscsiadm` | 2.1.11 or later |
@@ -75,7 +75,9 @@ Review the system requirements and storage port and LDEV configuration requireme
 
 ### Download and install the plug-in
 
-Download the Debian installation package (`.deb`) from the [Hitachi Vantara Support Portal](https://support.hitachivantara.com/). Under Downloads, select **Storage Plug-in for Proxmox VE**.
+Download the Debian installation package (`.deb`) from the **Assets** section of the [latest GitHub release](https://github.com/hitachi-vantara/Hitachi-Storage-Plugin-for-Proxmox-VE/releases/latest).
+
+For a specific version, see [all releases](https://github.com/hitachi-vantara/Hitachi-Storage-Plugin-for-Proxmox-VE/releases).
 
 Install the plug-in on each Proxmox VE node that requires access to Hitachi storage.
 
@@ -154,7 +156,7 @@ For additional configuration and storage management procedures, refer to the Ins
 
 ## Known Issues and Limitations
 
-Version 1.0.0 is the initial release of HSPV. The following limitations apply:
+Version 1.0.0 is the initial release of the Storage Plug-in for Proxmox VE. The following limitations apply:
 
 - Adding and updating Hitachi storage pools is supported through the CLI only (`pvesm add` and `pvesm set`).
 - Provisioned volumes support only the `raw` image format.

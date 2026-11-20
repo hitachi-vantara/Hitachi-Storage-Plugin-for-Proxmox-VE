@@ -176,7 +176,7 @@ For detailed installation, configuration, supported features, and usage instruct
 | Document | Document number | Link |
 |---|---|---|
 | Hitachi Storage Plug-in for Proxmox VE v1.0.0 Installation and User Guide | MK-26ADPTR166-00 | [Installation and User Guide](https://docs.hitachivantara.com/v/u/en-us/mk-26adptr166/latest) |
-| Hitachi Storage Plug-in for Proxmox VE v1.0.0 Release Notes | RN-26ADPTR162-00 | [Hitachi Vantara Documentation]([https://docs.hitachivantara.com/](https://docs.hitachivantara.com/v/u/en-us/rn-26adptr162/latest) |
+| Hitachi Storage Plug-in for Proxmox VE v1.0.0 Release Notes | RN-26ADPTR162-00 | [Hitachi Vantara Documentation](https://docs.hitachivantara.com/v/u/en-us/rn-26adptr162/latest) |
 
 Additional resources:
 
